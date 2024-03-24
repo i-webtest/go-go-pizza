@@ -1,0 +1,28 @@
+.header {
+  position: absolute;
+  z-index: 10;
+  top: 24px;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.header__logo {
+  width: 120px;
+}
+
+.header__cart {
+  width: 20px;
+  height: 20px;
+}
+
+.header__cart:hover {
+  color: var(--orange);
+}
