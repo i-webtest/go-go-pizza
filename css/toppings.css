@@ -36,9 +36,6 @@
   display: flex;
 }
 
-.toppings__item {
-}
-
 .toppings__checkbox {
   position: absolute;
   appearance: none;
@@ -61,4 +58,37 @@
 .toppings__checkbox:checked + .toppings__label {
   color: var(--light);
   background-color: var(--orange);
+}
+
+@media (width >= 620px) {
+  .toppings {
+    padding: 32px 0;
+  }
+
+  .toppings__button {
+    font-size: 24px;
+  }
+
+  .toppings__label {
+    font-size: 20px;
+  }
+}
+
+@media (width >= 860px) {
+  .toppings__title {
+    position: static;
+    transform: none;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .toppings__button {
+    display: none;
+  }
+
+  .toppings__list {
+    display: flex;
+    max-height: none;
+  }
 }
