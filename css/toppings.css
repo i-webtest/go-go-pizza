@@ -47,7 +47,12 @@
   background-color: var(--white);
   border: 1px solid transparent;
   border-radius: 32px;
+  cursor: pointer;
   padding: 8px 24px;
+}
+
+.toppings__label:hover {
+  color: var(--orange);
 }
 
 .toppings__checkbox:focus-visible + .toppings__label {
@@ -60,6 +65,32 @@
   background-color: var(--orange);
 }
 
+.toppings__checkbox:checked + .toppings__label:hover {
+  color: var(--beige);
+}
+
+.toppings__reset {
+  display: block;
+  line-height: 1.4;
+  color: var(--beige);
+  background-color: var(--white);
+  border: 1px solid transparent;
+  border-radius: 32px;
+  cursor: pointer;
+  outline: none;
+  padding: 8px 24px;
+}
+
+.toppings__reset:hover {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+.toppings__reset:focus-visible {
+  color: var(--orange);
+  border-color: #b66200;
+}
+
 @media (width >= 620px) {
   .toppings {
     padding: 32px 0;
@@ -69,7 +100,8 @@
     font-size: 24px;
   }
 
-  .toppings__label {
+  .toppings__label,
+  .toppings__reset {
     font-size: 20px;
   }
 }
