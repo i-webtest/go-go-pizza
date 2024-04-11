@@ -14,7 +14,6 @@
   background-color: var(--white);
   border-radius: 32px;
   cursor: default;
-  padding: 16px;
   margin: auto;
 }
 
@@ -22,41 +21,4 @@
   position: absolute;
   top: 16px;
   right: 16px;
-}
-
-.modal-pizza {
-}
-
-.modal-pizza__main {
-  max-width: 368px;
-}
-
-.modal-pizza__image {
-}
-
-.modal-pizza__title {
-}
-
-.modal-pizza__toppings {
-}
-
-.modal-pizza__info {
-}
-
-.modal-pizza__ {
-}
-
-.modal-pizza__form {
-}
-
-.modal-pizza__fieldset {
-}
-
-.modal-pizza__checkbox {
-}
-
-.modal-pizza__label {
-}
-
-.modal-pizza__add-cart {
 }

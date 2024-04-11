@@ -1,4 +1,5 @@
 import { getData } from './getData.js';
+import { changeFirstUpperCase } from './helpers.js';
 import { renderPizzas } from './renderPizzas.js';
 
 // const createTopping = (data) => {
@@ -17,9 +18,7 @@ export const renderToppings = async () => {
     item.classList.add('toppings__item');
     item.innerHTML = `
       <input class="toppings__checkbox" type="checkbox" id="${enName}" name="topping" value="${enName}" />
-      <label class="toppings__label" for="${enName}">${ruToppings[i][0].toUpperCase()}${ruToppings[i]
-      .slice(1)
-      .toLowerCase()}</label>
+      <label class="toppings__label" for="${enName}">${changeFirstUpperCase(ruToppings[i])}</label>
     `;
 
     return item;
